@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 from flask import jsonify
 from block_chain import BlockChain, Transaction
 
-osaCoin=BlockChain()
+osaCoin = BlockChain()
 osaCoin.createTransaction(Transaction('address1', 'address2', 100))
 osaCoin.createTransaction(Transaction('address2', 'address1', 50))
 
